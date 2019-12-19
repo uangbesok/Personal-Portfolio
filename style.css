@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+  
+body, main
+{
+      font-family: 'Roboto Condensed', sans-serif; 
+}
+
+.wrapper {
+    display : flex;
+    flex-direction: column;
+    overflow: hidden;
+} 
+
+.mainContent {
+    flex: 1 0 auto;
+    height: calc(100vh - 3rem);
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+/* Styling navigation bar */
+
+.sticky
+{
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.navigationBar
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 3rem;
+}
+
+#navbar{
+    align-self: flex-end;
+    width: 100%;
+}
+
+
+.mainNav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 1rem;
+    margin: 0 3em 0 0;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(143, 142, 142);
+    display: inline-block;
+}
+
+.navbarSection
+{
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.mainNav :hover {
+    filter: brightness(15%);
+}
+
+/* Styling welcome section */
+
+.welcomeSection
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    height: calc(100vh - 3rem);
+}
+
+
+.gradient-text {
+    font-size: 3rem;
+    background: linear-gradient(to right, #8e9eab 0%, #eef2f3 100%);
+    /* background color masked along the text and clip away the rest */
+    -webkit-background-clip: text;
+    /* make fill color to transparent so that masked background color will be shown */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling projects section */
+
+.projectsSection {
+    padding: 2rem;
+}
+  
+  .projectsSection > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .projectsSection > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+    text-decoration: none;
+  }
+  
+  .projectsSection > ul > li > figure {
+    max-height: 15rem;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+  }
+  
+  .projectsSection > ul > li > figure > img {  
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .projectsSection > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+  }
+  
+  .projectsSection > ul > li > figure > figcaption > h3 {
+    color: white;
+    padding: .75rem;
+    font-size: 1.25rem;
+  }
+  
+  .projectsSection > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+  }
+  
+  .projectsSection > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;    
+  }
+
+.projectsSection > ul > li > a:hover {
+    opacity: .6;
+}
+
+
+/* Styling Contact section */
+
+.contact
+{
+    background : linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* height: 3rem; */
+    color: rgb(143, 142, 142);
+    width: 100%;
+    flex-shrink: 0;
+}  
+
+@media (max-width: 600px) {
+
+    .navigationBar
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 5.9rem;
+    }
+
+    #nav-bar {
+        width: 100vw;
+    }
+
+    .mainNav
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbarSection
+    {
+        padding: 0.3em;
+        width: 100%;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .mainNav:last-child {
+        border-bottom: 2px solid black;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .mainContent
+    {
+        height: calc(100vh - 5.9rem);
+    }
+
+    .welcomeSection
+    {
+        height: calc(100vh - 5.9rem);
+    }
+
+    .gradient-text {
+        font-size: 2rem;
+    }
+}

@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sergey Konovalov</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-</head>
-<body class="wrapper">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/05643cd844.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="wrapper">
     <header class="sticky navigationBar" id="header">
-            <nav id="navbar">
-                    <ul class="mainNav">
-                      <li class="navbarSection"><a class="nav-link" href="#about">About</a></li>
-                      <li class="navbarSection"><a class="nav-link" href="#work">Work</a></li>
-                      <li class="navbarSection"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-            </nav>
+      <nav id="navbar">
+        <ul class="mainNav">
+          <li class="navbarSection">
+            <a class="nav-link" href="#welcome-section">About</a>
+          </li>
+          <li class="navbarSection">
+            <a class="nav-link" href="#projects">Work</a>
+          </li>
+          <li class="navbarSection">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="mainContent">
-        <section class="welcomeSection" id="welcome-section">
-              <h1 class="gradient-text">Hi, my name is Sergey Konovalov<br>I build for the Web</h1>
-        </section>
-        <section class="projectsSection" id="projects">
-         <ul>
-            <li>
-              <figure>
-                <img src="./img/KittyFriends.jpg" alt="Kitty Friends">
+      <section class="welcomeSection" id="welcome-section">
+        <h1 class="gradient-text">
+          Hi, my name is Sergey Konovalov<br />I build for the Web
+        </h1>
+      </section>
+      <section id="projects">
+        <div class="projectsTitle">
+            <h2>Projects</h2>
+        </div>
+        <div class="projectsSection">
+          <ul>
+            <li class="project-tile">
+              <figure class="grow">
+                <img src="https://user-images.githubusercontent.com/45453585/71187641-690de080-22ba-11ea-9328-5e7b0b1e86c2.jpg" alt="Kitty Friends" />
                 <figcaption><h3>Kitty Friends</h3></figcaption>
               </figure>
               <p>
-                 React/Redux web application getting data from test API. Uses Error boundaries, Redux thunk and Redux logger middleware.
+                React/Redux web application getting data from test API. Uses
+                Error boundaries, Redux thunk and Redux logger middleware.
               </p>
-              <a href="#">Go there</a>
+              <a href="https://uangbesok.github.io/Kitty-Friends/" target="_blank">Go there</a>
             </li>
-            <li>
-              <figure>
-                <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
+            <li class="project-tile">
+              <figure class="grow">
+                <img
+                  src="https://user-images.githubusercontent.com/45453585/71187844-d6ba0c80-22ba-11ea-9f1a-b2815f904fac.jpg"
+                  alt="Nail Box"
+                />
                 <figcaption><h3>Basic landing page sample</h3></figcaption>
               </figure>
               <p>
-                Sample for nail salon landing page. Uses vanilla html/css with flexbox and sticky header/footer
+                Sample for nail salon landing page. Uses vanilla html/css with
+                flexbox and sticky header/footer
               </p>
-              <a href="#">Go there</a>
+              <a href="https://codepen.io/uangbesok/pen/YzzvVMm" target="_blank">Go there</a>
             </li>
-            <li>
-              <figure>
-                <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
-                <figcaption><h3>Tech documentation layout sample</h3></figcaption>
+            <li class="project-tile">
+              <figure class="grow">
+                <img
+                  src="https://user-images.githubusercontent.com/45453585/71187937-06691480-22bb-11ea-81d4-dc51ab686e43.jpg"
+                  alt="Technical documentation flex box"
+                />
+                <figcaption>
+                  <h3>Tech documentation layout sample</h3>
+                </figcaption>
               </figure>
               <p>
-                Sample for tech documentation. Uses vanilla html/css with flexbox and utilizes grow/shrink properties
-              </p>  
-              <a href="#">Go there</a>
+                Sample for tech documentation. Uses vanilla html/css with
+                flexbox and utilizes grow/shrink properties
+              </p>
+              <a href="https://codepen.io/uangbesok/pen/MWWBKyR" target="_blank">Go there</a>
             </li>
           </ul>
-        </section>
-        <section class="contact" id="contact">
-            <h2>TEST666</h2>
-            <h2>TEST666</h2>
-        </section>
-   </main>
-</body>
+        </div>
+      </section>
+      <section class="contactSection" id="contact">
+        <ul class="contactList">
+          <li class="contactItem">
+            <a href="https://www.facebook.com/sergey.konovalov.399488" target="_blank" id="profile-link" class="contact-link"><i class="fab fa-facebook"></i> Facebook</a>
+          </li>
+          <li class="contactItem">
+            <a href="https://github.com/uangbesok" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+          </li>
+          <li class="contactItem">
+            <a href="https://www.linkedin.com/in/sergey-konovalov-ba061437/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> Linkedin</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
